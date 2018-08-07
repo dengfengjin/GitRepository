@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /springboot
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/0801
+    username: root
+    password: root
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+  thymeleaf:
+    cache: false
+    enabled: false
+  redis:
+    port: 6379
+    host: localhost
+  data:
+    mongodb:
+      database: 1801
+      host: localhost
+      port: 27017
