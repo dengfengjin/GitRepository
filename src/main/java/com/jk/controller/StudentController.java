@@ -191,6 +191,7 @@ public class StudentController {
         stu.setName("李四");
         stu.setSex("男");
         mongoTemplate.save(stu);
+
         return "1";
     }
 
